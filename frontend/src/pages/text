@@ -1,0 +1,32 @@
+import React from 'react'
+import resume from '../assets/Asif_Ahmad_full stack.pdf'
+import img1 from '../assets/port.jpg'
+
+function Home() {
+  return (
+    <div className=' w-[100dvw-60px] lg:h-[100dvh] grid grid-cols-1 lg:grid-cols-2 grid-cols-revers '>
+
+      <div className="text px-5 lg:pl-20 py-10 flex flex-col gap-5 justify-center order-2 lg:order-1 ">
+        <p className=''>Hi, Weclome</p>
+        <h1 className='text-6xl lg:text-7xl font-bold'> I'm 
+          <span className=' text-primery'> Asif Ahmad</span></h1>
+        <h2 className=' text-3xl font-bold'> Full Stack Devloper</h2>
+        <p className='pr-[60px] lg:pr-0'>i create beutiful, function, and user-centerd digital experiences, with 
+          2+ years experiences in web devlopment. i bring ideas to life through
+          clean code and thoughtful design
+        </p>
+        <div className=" flex gap-5">
+        <a href={resume} className='px-[40px] py-[10px] bg-primery text-textColor border hover:scale-105  '>Download</a>
+        <a href="/contact" className='px-[40px] py-[10px] border border-primery text-primery hover:scale-105'> Contact</a>
+        </div>
+      </div>
+
+      <div className="pic px-2 lg:pr-10 py-10 flex items-center justify-center order-1 lg:order-2">
+        <img src={img1} className=' h-[100%]'/>
+      </div>
+      
+    </div>
+  )
+}
+
+export default Home

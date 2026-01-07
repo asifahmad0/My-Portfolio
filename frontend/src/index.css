@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@theme{
+    --color-primery:#0D4715;
+    --color-secondry:#41644A;
+    --color-textColor:white;
+    --color-textColor2:black;
+}
+*{
+    scrollbar-width: none;
+}
+
+.toggle{
+    align-items: start;
+    background-color: aqua;
+}
+.toggle .logo{
+    margin-top:1.5px;
+}
+.toggle ul{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+    transition: all .5s ease-in-out;
+}
+.toggle .toggl{
+    margin-top: 12px;
+}
+/*--------------------------------------Home Section-----------------------------*/
+
+
+/*------------------------------skill section -----------------------------------*/
+
+.container{
+    animation: skillanime 7s linear infinite;
+}
+@keyframes skillanime {
+    0%{
+        transform: translateX(0%);
+
+    }100%{
+
+        transform: translateX(-100%);
+    }
+    
+}
+.container img:hover{
+    animation-duration: 0;
+}
