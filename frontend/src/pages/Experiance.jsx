@@ -70,7 +70,7 @@ export default function Experience() {
               {/* Card */}
               <div
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-                className="w-full sm:w-[45%] bg-white dark:bg-zinc-900 shadow-lg rounded-xl p-6 mt-[15px] md:mt-0"
+                className="w-full sm:w-[45%] bg-white shadow-lg rounded-xl p-6 mt-[15px] md:mt-0"
               >
                 <h3 className="text-xl font-semibold">
                   {item.company}
@@ -80,7 +80,7 @@ export default function Experience() {
                   {item.duration}
                 </span>
 
-                <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
+                <p className="mt-3 text-sm text-gray-600 ">
                   {item.description}
                 </p>
               </div>
