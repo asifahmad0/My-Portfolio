@@ -86,7 +86,7 @@ useEffect(() => {
             <p>Projects Complited</p>
             </div>
           <div className=" p-2 lg:p-4 border-primery max-w-[150px]">
-            <h1 className="text-2xl text-primery font-bold ">15+</h1>
+            <h1 className="text-2xl text-primery font-bold ">20+</h1>
             <p>Technologies</p>
             </div>
           

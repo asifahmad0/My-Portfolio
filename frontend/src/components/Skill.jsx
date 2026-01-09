@@ -1,10 +1,11 @@
 import React from 'react'
+
 import html from '../assets/html.jpeg'
 import css from '../assets/css3.jpeg'
 import js from '../assets/js.jpeg'
 import ts from '../assets/ts.svg'
 import tailwind from '../assets/tailwind.jpeg'
-import react from '../assets/react.svg'
+import reactImg from '../assets/react.svg'
 import nodejs from '../assets/node-js-logo.png'
 import express from '../assets/express.png'
 import firebase from '../assets/firebase.webp'
@@ -21,37 +22,25 @@ import seaborn from '../assets/clerk.svg'
 import sklearn from '../assets/jest.png'
 import framer from '../assets/framer.webp'
 
-
-
-
-
 function Skill() {
-
-  const img_dict=[html, css, js, ts, tailwind, react, nodejs, express, firebase, python, django, mongodb, flask,
-     RestAPI, MySQL, pandas, numpy, matplotlib, seaborn, sklearn, framer
-]
-
+  const skills = [
+    html, css, js, ts, tailwind, reactImg,
+    nodejs, express, firebase,python,django, mongodb, flask, RestAPI, MySQL, pandas, numpy,
+    matplotlib, seaborn, sklearn, framer
+  ]
 
   return (
-    <div className='w-[100dvw-60px] h-[50px] overflow-hidden '>
-        <div className="container w-max flex flex-nowrap gap-[23px] ">
-
-          {
-            img_dict.map((items, index)=>(
-              <img src={items} key={index} alt='Html' className='min-w-[50px] min-h-[50px] max-h-[50px] objact-center ' />
-            ))
-          }
-
-          {
-            img_dict.map((items, index)=>(
-              <img src={items} key={index} alt='Html' className='min-w-[50px] min-h-[50px] max-h-[50px] objact-center ' />
-            ))
-          }
-            
-
-            
-        </div>
-      
+    <div className="w-full overflow-hidden">
+      <div className="skill-track pl-[17px]">
+        {[...skills, ...skills].map((item, index) => (
+          <img
+            key={index}
+            src={item}
+            alt="skill"
+            className="w-[50px] h-[50px] object-contain"
+          />
+        ))}
+      </div>
     </div>
   )
 }

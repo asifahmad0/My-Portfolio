@@ -1,105 +1,95 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
+import html from '../assets/html.jpeg'
+import css from '../assets/css3.jpeg'
+import bootstrap from '../assets/bootstrap.svg'
+import shadcn from '../assets/sadcn.jpeg'
+import js from '../assets/js.jpeg'
+import ts from '../assets/ts.svg'
+import tailwind from '../assets/tailwind.jpeg'
+import react from '../assets/react.svg'
+import nodejs from '../assets/node-js-logo.png'
+import express from '../assets/express.png'
+import firebase from '../assets/firebase.webp'
+import mongodb from '../assets/mongodb.svg'
+import next from '../assets/nextjs.jpeg'
+import postgre from '../assets/postgres.avif'
+import framer from '../assets/framer.webp'
+import git from '../assets/git.jpeg'
+import github from '../assets/github.svg'
 
 const skills = [
-  { name: "JavaScript", type: "Programming Language", icon: "🟨" },
-  { name: "React", type: "Library", icon: "⚛️" },
-  { name: "TypeScript", type: "Programming Language", icon: "🟩" },
-  { name: "Node.js", type: "Programming Language", icon: "🟢" },
-  { name: "Next.js", type: "Framework", icon: "Ⓝ" },
-  { name: "Express.js", type: "Framework", icon: "🚀" },
-  { name: "React Native", type: "Framework", icon: "📱" },
-  { name: "HTML", type: "Markup Language", icon: "📄" },
-  { name: "CSS", type: "Styling Language", icon: "🎨" },
-  { name: "Jest", type: "Testing Framework", icon: "🧪" },
-  { name: "Supertest", type: "Library", icon: "✅" },
-  { name: "RTK Query", type: "Library", icon: "🔁" },
-  { name: "Tailwind CSS", type: "Library", icon: "💨" },
-  { name: "Shadcn/ui", type: "Library", icon: "🧩" },
-  { name: "Framer Motion", type: "Animation Tool", icon: "🎞️" },
-  { name: "Firebase", type: "Database", icon: "🔥" },
-  { name: "Supabase", type: "Database", icon: "🟢" },
-  { name: "PostgreSQL", type: "Database", icon: "🐘" },
-  { name: "MongoDB", type: "Database", icon: "🍃" },
-  { name: "Prisma", type: "ORM", icon: "🔺" },
-  { name: "Git", type: "Version Control", icon: "🌱" },
-  { name: "GitHub", type: "Version Control", icon: "🐙" },
+  { name: "JavaScript", type: "Programming Language", icon: js },
+  { name: "React", type: "Library", icon: react },
+  { name: "TypeScript", type: "Programming Language", icon: ts },
+  { name: "Node.js", type: "Programming Language", icon: nodejs },
+  { name: "Next.js", type: "Framework", icon: next  },
+  { name: "Express.js", type: "Framework", icon: express },
+  { name: "HTML", type: "Markup Language", icon: html},
+  { name: "CSS", type: "Styling Language", icon: css },
+  { name: "Bootstrap", type: "Library", icon: bootstrap },
+  { name: "Shadcn/ui", type: "Library", icon: shadcn },
+  { name: "Tailwind CSS", type: "Library", icon: tailwind },
+  { name: "Framer Motion", type: "Animation Tool", icon: framer },  
+  { name: "Firebase", type: "Database", icon: firebase },
+  { name: "PostgreSQL", type: "Database", icon: postgre },
+  { name: "MongoDB", type: "Database", icon: mongodb },
+  { name: "Git", type: "Version Control", icon: git },
+  { name: "GitHub", type: "Version Control", icon: github },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.12,
-    },
-  },
-};
-
 const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 10 },
 };
 
 export default function SkillsSection() {
   const [showAll, setShowAll] = useState(false);
+
   const visibleSkills = showAll ? skills : skills.slice(0, 8);
 
   return (
-    <section className="max-w-[100dvw-60px] mx-auto px-4 py-16">
-      {/* Heading Animation */}
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-3xl font-bold mb-10"
-      >
-        My Stack / Skills
-      </motion.h2>
+    <section className="max-w-7xl mx-auto px-4 py-16">
+      <h2 className="text-3xl font-bold mb-10">My Stack / Skills</h2>
 
-      {/* Skills Grid */}
+      {/* GRID */}
       <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
+        layout
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
       >
-        {visibleSkills.map((skill, index) => (
-          <motion.div
-            key={index}
-            variants={cardVariants}
-            className="flex items-center gap-4 p-5 border rounded-xl bg-white shadow-sm hover:shadow-md transition"
-          >
-            <div className="text-3xl">{skill.icon}</div>
-            <div>
-              <h3 className="font-semibold text-lg">{skill.name}</h3>
-              <p className="text-sm text-gray-500">{skill.type}</p>
-            </div>
-          </motion.div>
-        ))}
+        <AnimatePresence>
+          {visibleSkills.map((skill) => (
+            <motion.div
+              layout
+              key={skill.name}
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              transition={{ duration: 0.3 }}
+              className="flex items-center gap-4 p-5 border rounded-xl bg-white shadow-sm"
+            >
+              <div className="text-3xl"><img src={skill.icon} className="w-[50px] h-[50px]" /></div>
+              <div>
+                <h3 className="font-semibold">{skill.name}</h3>
+                <p className="text-sm text-gray-500">{skill.type}</p>
+              </div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </motion.div>
 
-      {/* View More Button Animation */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        viewport={{ once: true }}
-        className="text-center mt-12"
-      >
+      {/* BUTTON */}
+      <div className="flex justify-center mt-10">
         <button
           onClick={() => setShowAll(!showAll)}
-          className="px-6 py-2 rounded-full border border-gray-300 hover:bg-gray-100 transition font-medium"
+          className="px-6 py-2 rounded-full border text-sm hover:bg-gray-100 transition"
         >
           {showAll ? "View Less" : "View More"}
         </button>
-      </motion.div>
+      </div>
     </section>
   );
 }

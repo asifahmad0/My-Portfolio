@@ -28,7 +28,7 @@ const projects = [
     live: "https://star-fusion.vercel.app/",
   },
   {
-    id: 1,
+    id: 3,
     title: "My Fitness World",
     description:
       "A  Gym web app with authentication, cart system and admin panel. where order protin and book persional trainer and many more",
@@ -38,7 +38,7 @@ const projects = [
     live: "https://foodapp-7img.onrender.com/",
   },
   {
-    id: 2,
+    id: 4,
     title: "Ahmad Cafe ",
     description:
       "A Cloude Cafe order your tea, cofee and snacks , contact and review works, this website mack digitle pregints for businesses.",
