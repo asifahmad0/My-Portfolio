@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @theme{
     --color-primery:#0D4715;
     --color-secondry:#41644A;
@@ -42,7 +43,7 @@
 
     }100%{
 
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
     
 }
