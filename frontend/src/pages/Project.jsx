@@ -35,7 +35,7 @@ const projects = [
     tech: ["React", "Tailwind", "REST API", "Nodemailer"],
     image: gymIMG,
     github: "https://github.com/asifahmad0/FitnesWorld.git",
-    live: "https://foodapp-7img.onrender.com/",
+    live: "https://fitnesworld.vercel.app/",
   },
   {
     id: 4,
