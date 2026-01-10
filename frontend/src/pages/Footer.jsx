@@ -29,7 +29,7 @@ useEffect(() => {
           
           {/* Brand / About */}
           <div>
-            <h3 className="text-xl font-semibold">Asif Ahmad</h3>
+            <h3 className="text-xl font-semibold text-textColor">Asif Ahmad</h3>
             <p className="mt-2 text-sm text-gray-400 max-w-sm">
               Full Stack Developer focused on building modern, responsive and
               performance-optimized web experiences.

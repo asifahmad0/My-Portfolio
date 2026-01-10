@@ -52,7 +52,7 @@ export default function SkillsSection() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold mb-10">My Stack / Skills</h2>
+      <h2 className="text-3xl text-textColor2 font-bold mb-10">My Stack / Skills</h2>
 
       {/* GRID */}
       <motion.div
@@ -69,12 +69,12 @@ export default function SkillsSection() {
               animate="visible"
               exit="exit"
               transition={{ duration: 0.3 }}
-              className="flex items-center gap-4 p-5 border rounded-xl bg-white shadow-sm"
+              className="skill-Card flex items-center gap-4 p-5 border rounded-xl bg-white shadow-sm hover:scale-105"
             >
               <div className="text-3xl"><img src={skill.icon} className="w-[50px] h-[50px]" /></div>
               <div>
-                <h3 className="font-semibold">{skill.name}</h3>
-                <p className="text-sm text-gray-500">{skill.type}</p>
+                <h3 className="font-semibold text-textColor2">{skill.name}</h3>
+                <p className="text-sm text-PtextColor">{skill.type}</p>
               </div>
             </motion.div>
           ))}

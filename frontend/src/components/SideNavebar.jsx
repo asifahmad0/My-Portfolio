@@ -39,7 +39,7 @@ function SideNavebar() {
             <h1>D</h1>
         </div>      
 
-        <ul className='p-3 flex flex-col items-center gap-15 lg:gap-20 lg:mb-5'>
+        <ul className='p-3 flex text-textColor2 flex-col items-center gap-15 lg:gap-20 lg:mb-5'>
             <li><a href="/" className='hover:text-primery'  ><House/></a></li>
             <li><a href="#about" className='hover:text-primery'  ><User/> </a></li>
             <li><a href="#projects" className='hover:text-primery'  ><FolderKanban/></a></li>

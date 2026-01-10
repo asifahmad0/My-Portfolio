@@ -21,7 +21,7 @@ function About() {
         <h1 className="text-primery text-3xl font-bold" data-aos="slide-right">
           About Us
         </h1>
-        <p className="" data-aos="zoom-out">
+        <p className=" text-PtextColor" data-aos="zoom-out">
           Hi, I’m <span className="text-primery font-bold">Asif Ahmad</span>, a FullStack Web
           Developer from India. I specialize in building scalable,
           user-friendly, and visually engaging applications using modern
@@ -40,9 +40,9 @@ function About() {
         </p>
 
         <div className="flex gap-2">
-          <div className=" "><a href="https://www.linkedin.com/in/asif-ahmad7761/" target="_blank" className="text-bold border-r-[2px] border-primery p-4 ">LikedIn</a></div>
-          <div className=" "><a href="https://github.com/asifahmad0" target="_blank" className="text-bold border-r-[2px] border-primery p-4 ">GitHub</a></div>
-          <div className=" "><a href="https://star-fusion.vercel.app/" target="_blank" className="text-bold border-primery p-4 ">Website</a></div>
+          <div className=" "><a href="https://www.linkedin.com/in/asif-ahmad7761/" target="_blank" className=" text-secondry text-bold border-r-[2px] border-primery p-4 ">LikedIn</a></div>
+          <div className=" "><a href="https://github.com/asifahmad0" target="_blank" className=" text-secondry text-bold border-r-[2px] border-primery p-4 ">GitHub</a></div>
+          <div className=" "><a href="https://star-fusion.vercel.app/" target="_blank" className=" text-secondry text-bold border-primery p-4 ">Website</a></div>
         </div>
       </div>
     </div>

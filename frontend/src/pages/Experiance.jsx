@@ -44,7 +44,7 @@ export default function Experience() {
     >
       {/* Heading */}
       <h2
-        className="text-3xl sm:text-4xl font-bold text-center mb-16"
+        className="text-3xl text-textColor2 sm:text-4xl font-bold text-center mb-16"
         data-aos="fade-up"
       >
         Experience
@@ -53,7 +53,7 @@ export default function Experience() {
       {/* Timeline Wrapper */}
       <div className="relative max-w-5xl mx-auto">
         {/* Center Line */}
-        <div className="absolute left-1/2 top-0 h-full w-[3px] bg-black -translate-x-1/2" />
+        <div className="absolute left-1/2 top-0 h-full w-[3px] bg-textColor2 -translate-x-1/2" />
 
         {/* Timeline Items */}
         <div className="flex flex-col gap-16">
@@ -65,14 +65,14 @@ export default function Experience() {
               }`}
             >
               {/* Dot */}
-              <span className="absolute left-1/2 top-6 w-4 h-4 bg-black rounded-full -translate-x-1/2 z-10  lg:mt-0" />
+              <span className="absolute left-1/2 top-6 w-4 h-4 bg-text-Color2 rounded-full -translate-x-1/2 z-10  lg:mt-0" />
 
               {/* Card */}
               <div
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                 className="w-full sm:w-[45%] bg-white shadow-lg rounded-xl p-6 mt-[15px] md:mt-0"
               >
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-xl text-textColor2 font-semibold">
                   {item.company}
                 </h3>
 
@@ -80,7 +80,7 @@ export default function Experience() {
                   {item.duration}
                 </span>
 
-                <p className="mt-3 text-sm text-gray-600 ">
+                <p className="mt-3 text-sm text-PtextColor ">
                   {item.description}
                 </p>
               </div>

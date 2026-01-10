@@ -5,6 +5,7 @@
     --color-secondry:#41644A;
     --color-textColor:white;
     --color-textColor2:black;
+    --color-PtextColor:#757575;
 }
 *{
     scrollbar-width: none;
@@ -48,4 +49,16 @@
   to {
     transform: translateX(-50%);
   }
+}
+
+.skill-track:hover{
+  filter: grayscale();
+}
+
+
+
+/*---------------------------------------------Skills-------------------*/
+
+.skill-Card:hover{
+  border: 2px solid var(--color-primery);
 }

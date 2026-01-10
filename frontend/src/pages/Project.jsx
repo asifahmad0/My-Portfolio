@@ -77,7 +77,7 @@ export default function ProjectSection() {
           <div
             key={project.id}
             data-aos="fade-up"
-            className="bg-white w-[300px] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all"
+            className="bg-white w-[300px] rounded-2xl shadow-lg overflow-hidden hover:scale-102 hover:shadow-xl transition-all"
           >
             {/* Image */}
             <img
@@ -92,7 +92,7 @@ export default function ProjectSection() {
                 {project.title}
               </h3>
 
-              <p className="text-sm text-gray-600 ">
+              <p className="text-sm text-PtextColor ">
                 {project.description}
               </p>
 
@@ -101,7 +101,7 @@ export default function ProjectSection() {
                 {project.tech.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-xs px-3 py-1 rounded-full bg-gray-200 "
+                    className="text-xs px-3 py-1 rounded-full bg-gray-200 text-textColor2 "
                   >
                     {tech}
                   </span>
@@ -114,7 +114,7 @@ export default function ProjectSection() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center px-4 py-2 rounded-lg border border-primery dark:border-primery hover:bg-primery hover:text-white transition"
+                  className="flex-1 text-primery text-center px-4 py-2 rounded-lg border border-primery dark:border-primery hover:bg-primery hover:text-white transition"
                 >
                   GitHub
                 </a>
