@@ -63,25 +63,25 @@ useEffect(() => {
             <h4 className="text-lg font-medium mb-3">Follow Me</h4>
             <div className="flex gap-4 text-gray-400">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/asifahmad0"
                 target="_blank"
                 className="hover:text-white transition"
               >
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/asif-ahmad7761/"
                 target="_blank"
                 className="hover:text-white transition"
               >
                 LinkedIn
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://www.instagram.com/the_formal_b0y"
                 target="_blank"
                 className="hover:text-white transition"
               >
-                Twitter
+                Instagram
               </a>
             </div>
           </div>
