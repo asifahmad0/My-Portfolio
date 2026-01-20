@@ -10,10 +10,10 @@ import autoPptImg from '../assets/autoppt.png'
 const projects = [
   {
     id: 1,
-    title: "Ahmad Cafe ",
+    title: "Auto PPT ",
     description:
-      "A Cloude Cafe order your tea, cofee and snacks , contact and review works, this website mack digitle pregints for businesses.",
-    tech: ["React", "Tailwind", "Firebase", "Resender"],
+      "Created a production-ready AI presentation tool that reduces manual slide creation time by automating content structure and design, while ensuring consistent layouts and responsive UI.",
+    tech: ["React", "TypeScript","Tailwind", "Firebase", "Geminy API", "RestAPI", "Prompt Engenearing"],
     image: autoPptImg,
     github: "https://github.com/asifahmad0/My-Portfolio",
     live: "https://autoppt.vercel.app/",

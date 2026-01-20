@@ -13,7 +13,6 @@ import nodejs from '../assets/node-js-logo.png'
 import express from '../assets/express.png'
 import firebase from '../assets/firebase.webp'
 import mongodb from '../assets/mongodb.svg'
-import next from '../assets/nextjs.jpeg'
 import postgre from '../assets/postgres.avif'
 import framer from '../assets/framer.webp'
 import git from '../assets/git.jpeg'
@@ -24,7 +23,6 @@ const skills = [
   { name: "React", type: "Library", icon: react },
   { name: "TypeScript", type: "Programming Language", icon: ts },
   { name: "Node.js", type: "Programming Language", icon: nodejs },
-  { name: "Next.js", type: "Framework", icon: next  },
   { name: "Express.js", type: "Framework", icon: express },
   { name: "HTML", type: "Markup Language", icon: html},
   { name: "CSS", type: "Styling Language", icon: css },
