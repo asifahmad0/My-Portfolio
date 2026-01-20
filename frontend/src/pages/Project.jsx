@@ -5,10 +5,21 @@ import foody from '../assets/foodis.png'
 import starfusion from '../assets/StarFusion.png'
 import gymIMG from '../assets/gym.png'
 import CofeemeIMG from '../assets/cofeeme.png'
+import autoPptImg from '../assets/autoppt.png'
 
 const projects = [
   {
     id: 1,
+    title: "Ahmad Cafe ",
+    description:
+      "A Cloude Cafe order your tea, cofee and snacks , contact and review works, this website mack digitle pregints for businesses.",
+    tech: ["React", "Tailwind", "Firebase", "Resender"],
+    image: autoPptImg,
+    github: "https://github.com/asifahmad0/My-Portfolio",
+    live: "https://autoppt.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Resturante Website",
     description:
       "A full-stack Resturent app with authentication, cart system and admin panel.",
@@ -18,7 +29,7 @@ const projects = [
     live: "https://foodapp-7img.onrender.com/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Softwear Company ",
     description:
       "Users can submit requirment, contact and review works, this website mack digitle pregints for businesses.",
@@ -28,7 +39,7 @@ const projects = [
     live: "https://star-fusion.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "My Fitness World",
     description:
       "A  Gym web app with authentication, cart system and admin panel. where order protin and book persional trainer and many more",
@@ -38,7 +49,7 @@ const projects = [
     live: "https://fitnesworld.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Ahmad Cafe ",
     description:
       "A Cloude Cafe order your tea, cofee and snacks , contact and review works, this website mack digitle pregints for businesses.",
@@ -47,6 +58,7 @@ const projects = [
     github: "https://github.com/asifahmad0/cofeeme",
     live: "https://cofeeme.vercel.app/",
   },
+  
 ];
 
 export default function ProjectSection() {
