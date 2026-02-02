@@ -44,7 +44,7 @@ function Skill() {
           //   alt="skill"
           //   className="w-[50px] h-[50px] object-contain"
           // />
-          <li className='text-textColor2 font-[cursive]'>{item}</li>
+          <li className='text-textColor2'>{item}</li>
         ))}
       </div>
     </div>
