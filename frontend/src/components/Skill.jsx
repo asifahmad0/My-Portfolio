@@ -23,15 +23,20 @@ import sklearn from '../assets/jest.png'
 import framer from '../assets/framer.webp'
 
 function Skill() {
-  const skills = [
+  const skillss = [
     html, css, js, ts, tailwind, reactImg,
     nodejs, express, firebase,python,django, mongodb, flask, RestAPI, MySQL, pandas, numpy,
     matplotlib, seaborn, sklearn, framer
   ]
+  const skills = [
+    'html', 'css', 'js', 'ts', 'tailwind',
+    'nodejs', 'express', 'firebase','python','django', 'mongodb', 'flask', 'RestAPI', 'MySQL', 'pandas', 'numpy',
+    'matplotlib', 'seaborn', 'sklearn', 'framer'
+  ]
 
   return (
-    <div className="w-full absolute bottom-[10px] overflow-hidden py-2 ">
-      <div className="skill-track pl-[17px]">
+    <div className="w-full glow absolute bottom-[20px] overflow-hidden py-2 ">
+      <div className="skill-track pl-[17px] bg-primery-light p-2">
         {[...skills, ...skills].map((item, index) => (
           // <img
           //   key={index}
@@ -39,7 +44,7 @@ function Skill() {
           //   alt="skill"
           //   className="w-[50px] h-[50px] object-contain"
           // />
-          <li className='text-primery-light font-[cursive]'>Asif Ahmad</li>
+          <li className='text-textColor2 font-[cursive]'>{item}</li>
         ))}
       </div>
     </div>

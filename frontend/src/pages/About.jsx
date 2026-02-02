@@ -30,9 +30,9 @@ export default function About() {
           className="relative perspective-[1200px]"
         >
           <div className="transform-style-preserve-3d bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl py-8 px-3 lg:px-8 shadow-2xl">
-            <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
+            <h2 className="text-3xl font-bold text-white mb-4 font">About Me</h2>
             <p className="text-gray-300 leading-relaxed">
-               Hi, I’m <span className="text-secondry font-bold">Asif Ahmad</span>, a FullStack Web
+               Hi, I’m <span className="text-secondry font-bold font">Asif Ahmad</span>, a FullStack Web
           Developer from India. I specialize in building scalable,
           user-friendly, and visually engaging applications using modern
           technologies such as Python, Django, Flask, FastAPI, Typescript, React, Express.js, Node.js, MongoDB, MySQL,

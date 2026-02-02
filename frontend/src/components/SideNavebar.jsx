@@ -1,5 +1,5 @@
-import { FolderKanban, House, IdCard, MessagesSquare, User, UserRound } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
+import { FolderKanban, House, MessagesSquare, User } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 

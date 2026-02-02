@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
-import resume from "../assets/Asif_Ahmad_full stack.pdf";
-import img1 from "../assets/port.png";
-import bg from '../assets/bg1.jpg'
+import resume from "../assets/Asif_Ahmad.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Skill from "../components/Skill";
 import { Float, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Object2 from "../components/Object2";
+
 
 
 
@@ -40,7 +38,7 @@ useEffect(() => {
 
   return (
     <section className=" bg-secondry relative w-[100dvw-60px] min-h-screen ">
-      {/* <img src={bg} className=" absolute w-screen h-screen object-cover -z-[9]"  alt="" srcset="" />  */}
+      
       <div className='absolute w-[100%] h-[100%] '>
       
               <Canvas className="absolute inset-0 w-[100%] h-[100%]" camera={{ position: [0, 0, 4] }}>
@@ -82,7 +80,7 @@ useEffect(() => {
           <a
             href={resume}
             download
-            className="px-6 py-3 bg-primery text-textColor lg:text-xl rounded-lg hover:scale-105 transition"
+            className="  px-6 py-3 bg-primery text-textColor lg:text-xl rounded-lg hover:scale-105 transition"
           >
             Download CV
           </a>
