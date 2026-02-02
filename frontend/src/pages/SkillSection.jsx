@@ -50,7 +50,7 @@ export default function SkillsSection() {
 
   return (
     <section className="max-w-7xl lg:max-w-screen bg-primery mx-auto px-4 py-16">
-      <h2 className="text-3xl text-center text-primery-light font-bold mb-10 ">My Stack / Skills</h2>
+      <h2 className="text-3xl text-center text-primery-light font-bold mb-10  font">My Stack / Skills</h2>
 
       {/* GRID */}
       <motion.div

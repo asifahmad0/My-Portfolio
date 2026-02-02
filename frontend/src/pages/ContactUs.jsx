@@ -20,7 +20,7 @@ export default function ContactSection() {
         variants={fadeUp}
         className="max-w-7xl mx-auto text-white mb-14"
       >
-        <h2 className="text-4xl text-textColor2 font-bold mb-2">Get In Touch</h2>
+        <h2 className="text-4xl text-textColor2 font-bold mb-2 font">Get In Touch</h2>
         <p className="text-textColor2 max-w-xl">
           If You have any quary, Opportunity, Offer and ETC you can contact me by filling this contact form
           

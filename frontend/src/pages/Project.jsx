@@ -77,7 +77,7 @@ export default function ProjectSection() {
     >
       {/* Heading */}
       <h2
-        className="text-primery text-3xl sm:text-4xl font-bold mb-10 text-center"
+        className="text-primery font text-3xl sm:text-4xl font-bold mb-10 text-center"
         data-aos="fade-up"
       >
         My Projects

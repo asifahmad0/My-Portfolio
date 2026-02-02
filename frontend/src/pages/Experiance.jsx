@@ -44,7 +44,7 @@ export default function Experience() {
     >
       {/* Heading */}
       <h2
-        className="text-3xl text-textColor2 sm:text-4xl font-bold text-center mb-16"
+        className=" font text-3xl text-primery sm:text-4xl font-bold text-center mb-16"
         data-aos="fade-up"
       >
         Experience
