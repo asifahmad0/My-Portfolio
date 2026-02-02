@@ -49,8 +49,8 @@ export default function SkillsSection() {
   const visibleSkills = showAll ? skills : skills.slice(0, 8);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-3xl text-textColor2 font-bold mb-10">My Stack / Skills</h2>
+    <section className="max-w-7xl lg:max-w-screen bg-primery mx-auto px-4 py-16">
+      <h2 className="text-3xl text-center text-primery-light font-bold mb-10 ">My Stack / Skills</h2>
 
       {/* GRID */}
       <motion.div
@@ -83,7 +83,7 @@ export default function SkillsSection() {
       <div className="flex justify-center mt-10">
         <button
           onClick={() => setShowAll(!showAll)}
-          className="px-6 py-2 rounded-full border text-sm hover:bg-gray-100 transition"
+          className="px-6 py-2 rounded-full border vorder-textColor text-sm text-textColor hover:bg-gray-100 hover:text-textColor2 transition"
         >
           {showAll ? "View Less" : "View More"}
         </button>

@@ -39,7 +39,7 @@ export default function Experience() {
 
   return (
     <section
-      className="min-h-screen w-[100dvh-60px] px-4 sm:px-6 lg:px-10 py-16"
+      className="min-h-screen w-[100dvh-60px] bg-gray-200 px-4 sm:px-6 lg:px-10 py-16"
       id="experience"
     >
       {/* Heading */}
@@ -65,14 +65,14 @@ export default function Experience() {
               }`}
             >
               {/* Dot */}
-              <span className="absolute left-1/2 top-6 w-4 h-4 bg-text-Color2 rounded-full -translate-x-1/2 z-10  lg:mt-0" />
+              <span className="absolute left-1/2 top-6 w-4 h-4 bg-textColor2 rounded-full -translate-x-1/2 z-10  lg:mt-0" />
 
               {/* Card */}
               <div
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                 className="w-full sm:w-[45%] bg-white shadow-lg rounded-xl p-6 mt-[15px] md:mt-0"
               >
-                <h3 className="text-xl text-textColor2 font-semibold">
+                <h3 className="text-xl text-primery font-semibold">
                   {item.company}
                 </h3>
 
@@ -80,7 +80,7 @@ export default function Experience() {
                   {item.duration}
                 </span>
 
-                <p className="mt-3 text-sm text-PtextColor ">
+                <p className="mt-3 text-sm text-textColor2 ">
                   {item.description}
                 </p>
               </div>

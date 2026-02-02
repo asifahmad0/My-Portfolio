@@ -21,12 +21,12 @@ function SideNavebar() {
 
     const [isOpen, setIsOpen] = useState(true)
   return (
-    <div className={` fixed bg-white w-[40px] lg:w-[60px] h-[100dvh] flex flex-col items-center justify-between py-5 shadow-xl z-9999`}
+    <div className={` fixed bg-gradient-to-t from-primery to-secondry w-[40px] lg:w-[60px] h-[100dvh] flex flex-col items-center justify-between py-5 shadow-xl z-9999`}
     data-aos="slide-down">
 
         
 
-        <div className="logo text-primery text-xl text-center font-bold p-3">
+        <div className="logo text-primery-light text-xl text-center font-bold p-3">
             <h1>A</h1>
             <h1>S</h1>
             <h1>I</h1>
@@ -39,7 +39,7 @@ function SideNavebar() {
             <h1>D</h1>
         </div>      
 
-        <ul className='p-3 flex text-textColor2 flex-col items-center gap-15 lg:gap-20 lg:mb-5'>
+        <ul className='p-3 flex text-textColor flex-col items-center gap-15 lg:gap-20 lg:mb-5'>
             <li><a href="/" className='hover:text-primery'  ><House/></a></li>
             <li><a href="#about" className='hover:text-primery'  ><User/> </a></li>
             <li><a href="#projects" className='hover:text-primery'  ><FolderKanban/></a></li>

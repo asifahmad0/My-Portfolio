@@ -30,15 +30,16 @@ function Skill() {
   ]
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full absolute bottom-[10px] overflow-hidden py-2 ">
       <div className="skill-track pl-[17px]">
         {[...skills, ...skills].map((item, index) => (
-          <img
-            key={index}
-            src={item}
-            alt="skill"
-            className="w-[50px] h-[50px] object-contain"
-          />
+          // <img
+          //   key={index}
+          //   src={item}
+          //   alt="skill"
+          //   className="w-[50px] h-[50px] object-contain"
+          // />
+          <li className='text-primery-light font-[cursive]'>Asif Ahmad</li>
         ))}
       </div>
     </div>

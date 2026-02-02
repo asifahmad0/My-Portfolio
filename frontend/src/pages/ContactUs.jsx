@@ -11,7 +11,7 @@ const fadeUp = {
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="relative w-[100dvw-60px] bg-sky-900 py-24 px-4">
+    <section id="contact" className="relative w-[100dvw-60px] bg-primery-light py-24 px-4">
       {/* Heading */}
       <motion.div
         initial="hidden"
@@ -20,8 +20,8 @@ export default function ContactSection() {
         variants={fadeUp}
         className="max-w-7xl mx-auto text-white mb-14"
       >
-        <h2 className="text-4xl text-textColor font-bold mb-2">Get In Touch</h2>
-        <p className="text-textColor max-w-xl">
+        <h2 className="text-4xl text-textColor2 font-bold mb-2">Get In Touch</h2>
+        <p className="text-textColor2 max-w-xl">
           If You have any quary, Opportunity, Offer and ETC you can contact me by filling this contact form
           
         </p>

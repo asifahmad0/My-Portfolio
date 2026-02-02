@@ -1,14 +1,38 @@
 @import "tailwindcss";
 
-@theme{
+/*@theme{
     --color-primery:#0D4715;
     --color-secondry:#41644A;
+    --color-textColor:white;
+    --color-textColor2:black;
+    --color-PtextColor:#757575;
+}*/
+@theme{
+    --color-primery-light:#5DA87A;
+    --color-primery:#2E6B46;
+    --color-secondry:#17402A;
     --color-textColor:white;
     --color-textColor2:black;
     --color-PtextColor:#757575;
 }
 *{
     scrollbar-width: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+.font{
+  /*font-family: "Bitcount Single", system-ui;*/
+  font-family: "Playwrite IN Guides", cursive;
+  font-optical-sizing: auto;
+  /* font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0; */
 }
 
 .toggle{
@@ -39,7 +63,7 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scroll 7s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -61,4 +85,12 @@
 
 .skill-Card:hover{
   border: 2px solid var(--color-primery);
+}
+
+/*-----------------------------------------------------About 3d Animation----------*/
+.perspective-\[1200px\] {
+  perspective: 1200px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
 }
