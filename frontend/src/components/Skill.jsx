@@ -29,9 +29,9 @@ function Skill() {
     matplotlib, seaborn, sklearn, framer
   ]
   const skills = [
-    'html', 'css', 'js', 'ts', 'tailwind',
-    'nodejs', 'express', 'firebase','python','django', 'mongodb', 'flask', 'RestAPI', 'MySQL', 'pandas', 'numpy',
-    'matplotlib', 'seaborn', 'sklearn', 'framer'
+    'HTML', 'CSS', 'JS', 'ts', 'TAILWIND',
+    'NODEJS', 'EXPRESS', 'FIREBASE','PYTHON','DJANGO', 'MONGODB', 'FLASK', 'RESTAPI', 'MySQL', 'PANDAS', 'NUMPY',
+    'MATPLOTLIB', 'SEABORN', 'SKLEARN', 'FRAMRR'
   ]
 
   return (
