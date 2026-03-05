@@ -72,7 +72,7 @@ export default function ProjectSection() {
 
   return (
     <section 
-      className=" min-h-screen w-[100dvh-60px] px-4 sm:px-6 lg:px-10 py-10 overflow-hidden"
+      className=" min-h-screen w-[100dvh-60px] px-4 sm:px-6 lg:px-10 py-10 overflow-hidden ml-[60px]"
       id="projects"
     >
       {/* Heading */}

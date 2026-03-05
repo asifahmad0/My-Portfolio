@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import python from '../assets/python.png'
+import flask from '../assets/flask.png'
+import django from '../assets/django.png'
 import html from '../assets/html.jpeg'
 import css from '../assets/css3.jpeg'
 import bootstrap from '../assets/bootstrap.svg'
@@ -13,26 +16,31 @@ import nodejs from '../assets/node-js-logo.png'
 import express from '../assets/express.png'
 import firebase from '../assets/firebase.webp'
 import mongodb from '../assets/mongodb.svg'
+import mysql from '../assets/mysql.png'
 import postgre from '../assets/postgres.avif'
 import framer from '../assets/framer.webp'
 import git from '../assets/git.jpeg'
 import github from '../assets/github.svg'
 
 const skills = [
+  { name: "Python", type: "Programming Language", icon: python },
+  { name: "Flask", type: "Framework", icon: flask },
+  { name: "Django", type: "Framework", icon: django },
   { name: "JavaScript", type: "Programming Language", icon: js },
-  { name: "React", type: "Library", icon: react },
   { name: "TypeScript", type: "Programming Language", icon: ts },
-  { name: "Node.js", type: "Programming Language", icon: nodejs },
+  { name: "React", type: "Library", icon: react },
+  { name: "Node.js", type: "JavaScript runtime environment", icon: nodejs },
   { name: "Express.js", type: "Framework", icon: express },
+  { name: "MongoDB", type: "Database", icon: mongodb },
   { name: "HTML", type: "Markup Language", icon: html},
   { name: "CSS", type: "Styling Language", icon: css },
   { name: "Bootstrap", type: "Library", icon: bootstrap },
   { name: "Shadcn/ui", type: "Library", icon: shadcn },
   { name: "Tailwind CSS", type: "Library", icon: tailwind },
   { name: "Framer Motion", type: "Animation Tool", icon: framer },  
+  { name: "MySql", type: "Database Managment System", icon: mysql },  
   { name: "Firebase", type: "Database", icon: firebase },
   { name: "PostgreSQL", type: "Database", icon: postgre },
-  { name: "MongoDB", type: "Database", icon: mongodb },
   { name: "Git", type: "Version Control", icon: git },
   { name: "GitHub", type: "Version Control", icon: github },
 ];
