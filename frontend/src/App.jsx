@@ -19,7 +19,6 @@ function App() {
       <SkillsSection/>
       <ProjectSection/>
       <ContactSection/>
-      <Footer/>
     </div>
   )
 }
