@@ -20,7 +20,7 @@ useEffect(() => {
 
 
   return (
-    <footer className="w-[100dvh-60px] bg-gradient-to-r from-primery to-secondry text-white px-4 sm:px-6 lg:px-10 py-10 overflow-hidden">
+    <footer className="w-[100dvh-60px] ml-[60px] bg-gradient-to-r from-primery to-secondry text-white px-4 sm:px-6 lg:px-10 py-10 overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         
         {/* Top Section */}
