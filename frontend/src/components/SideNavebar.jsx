@@ -40,10 +40,10 @@ function SideNavebar() {
         </div>      
 
         <ul className='p-3 flex text-textColor flex-col items-center gap-15 lg:gap-20 lg:mb-5'>
-            <li><a href="/" className='hover:text-primery'  ><House/></a></li>
-            <li><a href="/about" className='hover:text-primery'  ><User/> </a></li>
-            <li><a href="/project" className='hover:text-primery'  ><FolderKanban/></a></li>
-            <li><a href="/contact" className='hover:text-primery'  ><MessagesSquare /></a></li>
+            <li><a href="/" className='hover:text-primery-light'  ><House/></a></li>
+            <li><a href="/about" className='hover:text-primery-light'  ><User/> </a></li>
+            <li><a href="/project" className='hover:text-primery-light'  ><FolderKanban/></a></li>
+            <li><a href="/contact" className='hover:text-primery-light'  ><MessagesSquare /></a></li>
         </ul>
 
         {/* <div onClick={()=>setIsOpen(!isOpen)} className="btn relative w-[30px] h-[20px] flex flex-col justify-around cursor-pointer">
