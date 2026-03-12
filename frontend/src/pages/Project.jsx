@@ -6,6 +6,8 @@ import starfusion from '../assets/StarFusion.png'
 import gymIMG from '../assets/gym.png'
 import CofeemeIMG from '../assets/cofeeme.png'
 import autoPptImg from '../assets/autoppt.png'
+import asifPortfolioImg from '../assets/asif-portfolio-img.png'
+import { useLocation, useParams } from "react-router-dom";
 
 const projects = [
   {
@@ -58,6 +60,16 @@ const projects = [
     github: "https://github.com/asifahmad0/cofeeme",
     live: "https://cofeeme.vercel.app/",
   },
+  {
+    id: 6,
+    title: "Portfolio ",
+    description:
+      " I create a Morden UI based Portfolio Website for Degital Presents and Showcase Own Skils  ",
+    tech: ["HTML","CSS", "Tailwind", "Scroll Trigger", ],
+    image: asifPortfolioImg,
+    github: "https://github.com/asifahmad0/Asif_Ahmad",
+    live: "https://asifahmad0.github.io/Asif_Ahmad",
+  },
   
 ];
 
@@ -70,9 +82,11 @@ export default function ProjectSection() {
     });
   }, []);
 
+  const isRoute = useLocation()
+
   return (
     <section 
-      className=" min-h-screen w-[100dvh-60px] px-4 sm:px-6 lg:px-10 py-10 overflow-hidden ml-[60px]"
+      className={ `min-h-screen w-[100dvh-60px] px-4 sm:px-6 lg:px-10 py-10 overflow-hidden ${ isRoute.pathname == '/project' ? 'ml-[60px]':""}`}
       id="projects"
     >
       {/* Heading */}

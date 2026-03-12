@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -10,15 +11,17 @@ const fadeUp = {
 };
 
 export default function ContactSection() {
+
+  const isRoute = useLocation()
   return (
-    <section id="contact" className="relative w-[100dvw-60px] bg-primery-light py-24 px-4">
+    <section id="contact" className={`relative w-[100dvw-60px] bg-primery-light py-24 px-4`}>
       {/* Heading */}
       <motion.div
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
         variants={fadeUp}
-        className="max-w-7xl mx-auto text-white mb-14"
+        className={`max-w-7xl mx-auto text-white mb-14 ${isRoute.pathname == '/contact'? "ml-[60px]":""}`}
       >
         <h2 className="text-4xl text-textColor2 font-bold mb-2 font">Get In Touch</h2>
         <p className="text-textColor2 max-w-xl">
@@ -33,7 +36,7 @@ export default function ContactSection() {
         whileInView="show"
         viewport={{ once: true }}
         variants={fadeUp}
-        className="max-w-7xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden"
+        className={`max-w-7xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden ${isRoute.pathname == '/contact'? "ml-[60px]":""}`}
       >
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {/* Left Form */}

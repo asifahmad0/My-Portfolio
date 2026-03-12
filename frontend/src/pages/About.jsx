@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 export default function About() {
+
+  const isRoute = useLocation()
   return (
-    <section className=" bg-gradient-to-br from-black via-primery-light to-black flex items-center justify-center py-8 lg:py-20 px-2 lg:px-6">
-      <div className=" w-full grid md:grid-cols-2 gap-12 items-center">
+    <section className={` bg-gradient-to-br from-black via-primery-light to-black flex items-center justify-center 
+    py-8 lg:py-20 px-2 lg:px-6 `}>
+      <div className={` w-full grid md:grid-cols-2 gap-12 items-center ${isRoute.pathname == '/about' ? "ml-[60px]":""}`}>
         
 
         {/* Floating 3D Elements */}
